@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ef8dc2c2eabfa4e8cb77be57a837c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  version: 1
   influenceShape: 0
   multiplier: 1
   weight: 1
@@ -356,6 +356,34 @@ Transform:
   m_Father: {fileID: 1444734336}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &606398225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606398226}
+  m_Layer: 0
+  m_Name: mojnowygameobject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &606398226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 606398225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &954474956
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ef8dc2c2eabfa4e8cb77be57a837c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  version: 1
   influenceShape: 0
   multiplier: 1
   weight: 1
@@ -624,7 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  version: 1
   clearColorMode: 0
   backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
   clearDepth: 1
@@ -642,6 +670,8 @@ MonoBehaviour:
     enableSSAO: 1
     enableSubsurfaceScattering: 1
     enableTransmission: 1
+    enableAtmosphericScattering: 1
+    enableVolumetric: 1
     diffuseGlobalDimmer: 1
     specularGlobalDimmer: 1
     enableForwardRenderingOnly: 0
@@ -650,7 +680,6 @@ MonoBehaviour:
     enableMotionVectors: 1
     enableObjectMotionVectors: 1
     enableDBuffer: 1
-    enableAtmosphericScattering: 1
     enableRoughRefraction: 1
     enableTransparentPostpass: 1
     enableDistortion: 1
@@ -1140,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c2871f720b2af4e9210febdac74517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  version: 1
   shadowResolution: 1024
   shadowDimmer: 1
   shadowFadeDistance: 10000
@@ -1163,7 +1192,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  - 0
+  - 0.2
   shadowAlgorithm: 0
   shadowVariant: 3
   shadowPrecision: 0
@@ -1186,15 +1215,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  version: 1
   directionalIntensity: 10
   punctualIntensity: 600
   areaIntensity: 200
+  enableSpotReflector: 0
   m_InnerSpotPercent: 0
   lightDimmer: 1
+  volumetricDimmer: 1
   fadeDistance: 10000
   affectDiffuse: 1
   affectSpecular: 1
+  nonLightmappedOnly: 0
   lightTypeExtent: 0
   spotLightShape: 0
   shapeWidth: 0.5
@@ -1284,7 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ef8dc2c2eabfa4e8cb77be57a837c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  version: 1
   influenceShape: 0
   multiplier: 1
   weight: 1
